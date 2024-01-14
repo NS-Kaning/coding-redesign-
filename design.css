@@ -1,0 +1,414 @@
+body {
+    background-image: url('3.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    filter: blur(2%);
+}
+/*navbar*/
+.logo {
+  max-width: 100px;
+  float: left;
+  margin-right: 60px;
+  margin-left: 15px;
+  width: 50px;
+  height: auto;
+  z-index: 3;
+}
+
+.nav-link-active{
+  margin-left: auto;
+}
+.nav-link-active2{
+  margin-left: auto;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(197, 191, 191);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0s, border-bottom 0s;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: color 0.3s;
+  justify-content: flex-start;
+  z-index: 2;
+}
+
+.navbar a:hover { /*ตัวปรับส่วนfilterเส้นnavbar*/
+  background-color: #2f17b800;
+  color: rgb(35, 106, 173);
+  border-bottom: 2px solid #0070c0;
+  z-index: 2;
+}
+.navbar {
+  overflow: calc(100% - 90);
+  color: rgb(233, 227, 227);
+  position: fixed; /* ติดอยู่ด้านบน */
+  top: 0; /* ตำแหน่งด้านบนของหน้าจอ */
+  width: 90%; /* ความกว้างเต็มหน้าจอ */
+  z-index: 100 ; /* กำหนดลำดับความสูงให้มากกว่าวีดีโอ */
+  left: 90px; 
+  padding: 10px 80px;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #a8a7a7;
+  padding: 15px 1px;
+}
+.navbar .icon{
+  margin-left: 80px;
+  margin-right: -350px;
+}
+
+.navbar .search-icon {
+  margin-left: 400px;
+  margin-right: 0px;
+
+  
+}
+
+
+
+/* เมื่อโฮเวอร์ Navbar ลิงก์ */
+.navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-links .search-icon {
+  color: white;
+  font-size: 25px;
+  margin-left: 350px;
+  cursor: pointer;
+  
+}
+.navbar-links .icon{
+  color: rgb(255, 255, 255);
+  font-size: 25px; /* ขนาดของไอคอน */
+  margin-left: 40px; /* ระยะห่างของไอคอนกับข้อความ */
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  right: -100px;
+  top: 55px;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  display: inline-block;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#login {
+  color: rgb(255, 255, 255);
+  font-size: 30px; /* ขนาดของไอคอน */
+  margin-left: 0; /* ระยะห่างของไอคอนกับข้อความ */
+  cursor: pointer;
+}
+#shop{
+  color: rgb(255, 255, 255);
+  font-size: 30px; /* ขนาดของไอคอน */
+  margin-left: 0; /* ระยะห่างของไอคอนกับข้อความ */
+  cursor: pointer;
+
+}
+#location{
+  color: rgb(255, 255, 255);
+  font-size: 30px; /* ขนาดของไอคอน */
+  margin-left: 0; /* ระยะห่างของไอคอนกับข้อความ */
+  cursor: pointer;
+
+}
+
+/*รูป*/
+.image-container {
+    position: relative; }
+.img1 {
+    position: absolute; 
+    width: 650px;
+    height: 345px;
+    filter: blur(2%);
+    mix-blend-mode:20%;
+    top: 85px; 
+    left: 385px; 
+    z-index: 2; /* ให้ค่า z-index สูงกว่ารูปภาพสอง */
+}
+.img2 {
+  position: absolute;
+  width: 925px;
+  height: 800px;
+  filter: blur(30%);
+  top: -65px;
+  left: 300px;
+  z-index: 1; 
+}
+/* ปรับตำแหน่งไอคอน */
+
+  /* ใช้สไตล์ข้อความสำหรับ header */
+.row {
+  font-size: 24px; /* ขนาดตัวอักษร 24px */
+  font-weight: bold; /* ตัวหนา */
+  color: #d0c8c8; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: 130px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 50px; /* ย้ายไปทางซ้าย 30px */
+}
+.low1 {
+  font-size: 24px; /* ขนาดตัวอักษร 24px */
+  font-weight: bold; /* ตัวหนา */
+  color: #d0c8c8; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: 100px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 60px; /* ย้ายไปทางซ้าย 30px */
+}
+.low2 {
+  font-size: 18px; /* ขนาดตัวอักษร 24px */
+  color: #d0c8c8; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: 28px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 60px; /* ย้ายไปทางซ้าย 30px */
+
+  
+}
+.low3 {
+  font-size: 24px; /* ขนาดตัวอักษร 24px */
+  font-weight: bold; /* ตัวหนา */
+  color: #d0c8c8; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: 23px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 60px; /* ย้ายไปทางซ้าย 30px */
+}
+.low4 {
+  font-size: 18px; /* ขนาดตัวอักษร 24px */
+  color: #d0c8c8; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: -49px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 60px; /* ย้ายไปทางซ้าย 30px */
+}
+.low5 {
+  font-size: 24px; /* ขนาดตัวอักษร 24px */
+  font-weight: bold; /* ตัวหนา */
+  color: #fff9f9; /* สีข้อความ */
+  padding: 200px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: -510px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 320px; /* ย้ายไปทางซ้าย 30px */
+  
+}
+.low5 h6{
+  margin-bottom: -8px;
+}
+.low6 {
+  font-size: 16px; /* ขนาดตัวอักษร 24px */
+  font-weight: bold; /* ตัวหนา */
+  color: #b3aeae; /* สีข้อความ */
+  padding: 200px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: -900px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  right: -1070px; /* ย้ายไปทางซ้าย 30px */
+  z-index: 5;
+}
+.low7 {
+  font-size: 24px; /* ขนาดตัวอักษร 24px */
+  font-weight: bold; /* ตัวหนา */
+  color: #f6d9d9; /* สีข้อความ */
+  padding: 10px; /* ระยะห่างข้างในของ header */
+  
+  /* ปรับตำแหน่งแนวตั้ง (vertical position) */
+  position: relative;
+  top: -1500px; /* ย้ายขึ้นข้างบน 20px */
+  
+  /* ปรับตำแหน่งแนวนอน (horizontal position) */
+  left: 390px; /* ย้ายไปทางซ้าย 30px */
+}
+
+/* สไลด์1*/
+.price-slider {
+    width: 280px;
+    margin: 20px auto;
+    position: relative;
+    top: -1470px;
+    left: -520px;
+}
+  .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    background: linear-gradient(to right, #485aad 0%, #3f52a9 0%, #d3d3d3 0%, #d3d3d3 100%);
+
+}
+  .slider:hover {
+    opacity: 1;
+}
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e7e6f9;
+    cursor: pointer;
+}
+  .min-price,.max-price {
+    position: absolute;
+    bottom: -20px;
+  
+}
+  
+  .min-price {
+    left: 0;
+    color: #d3d3d3;
+}
+  
+  .max-price {
+    right: 0;
+    color: #d3d3d3;
+}
+  
+  .current-price {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+
+}
+  /* สไลด์เลอร์ที่สอง */
+  .price-slider-two{
+    width: 280px;
+    margin: 20px auto;
+    position: relative;
+    top: -1380px;
+    left: -520px;
+}
+  .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    background: linear-gradient(to right, #f5f7ff 0%, #575d77 0%, #50538f 0%, #ffffff 100%);
+}
+  .slider:hover {
+    opacity: 1;
+}
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #babacd;
+    cursor: pointer;
+}
+  .min-price,.max-price {
+    position: absolute;
+    bottom: -20px;
+}
+  .min-price {
+    left: 0;
+    color: #d3d3d3;
+}
+  .max-price {
+    right: 0;
+    color: #d3d3d3;
+}
+  .current-price {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+/* CSS */
+/* สร้างสไตล์ของปุ่ม */
+.custom-button {
+    width: 90px; /* กำหนดความกว้าง */
+    height: 40px; /* กำหนดความสูง */
+    background-color: #3452669c; /* สีพื้นหลัง */
+    color: #ffffff; /* สีข้อความ */
+    border: none; /* ไม่มีเส้นขอบ */
+    text-align: center; /* จัดตำแหน่งข้อความตรงกลาง */
+    text-decoration: none; /* ไม่มีเส้นใต้ข้อความ */
+    display: flex; /* ให้เนื้อหาแสดงเป็น Flexbox */
+    align-items: center; /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: center; /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    cursor: pointer; /* รูปแบบของเมาส์เมื่อชี้ไปที่ปุ่ม */
+    border-radius: 4px; /* รูปแบบของมุม */
+    margin-top: -1320px;
+    margin-left: 165px;
+  }
+  
+  
+  /* สไตล์ของปุ่มเมื่อเมาส์วิ่งเข้ามา */
+  .custom-button:hover {
+    background-color: #2c2b3b; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+  }
+  
